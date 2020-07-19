@@ -1,5 +1,7 @@
 const fs = require('fs');
-const input = fs.readFileSync(0, 'utf8').trim().split('\n');
+const input = fs.readFileSync('2020A.text', 'utf8').trim().split('\n');
+
+console.log(input);
 
 let currentline = 0;
 function readline(){
@@ -10,6 +12,8 @@ let T = readline();
 for(let i = 1; i <= T; i++){
     let [N, B] = readline().split(' ');
     let arr = readline().split(' ');
+    console.log(N, B);
+    console.log(arr);
     console.log(`Case #${i}: ${solution(B, arr)}`);
 }
 
